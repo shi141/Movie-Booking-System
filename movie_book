@@ -1,0 +1,13 @@
+create database movie_booking;
+use movie_booking;
+
+create table user_table (sno int(4) not null auto_increment,name char(30),username char(30),password char(30),number char(11),primary key(sno));
+
+create table vabi (id int(4) not null auto_increment,cost char(9),primary key(id));
+
+create table chennai_cinema (sno int(4) not null auto_increment,name char(40),area char(15),primary key(sno));
+create table delhi_cinema (sno int(4) not null auto_increment,name char(40),area char(15),primary key(sno));
+create table mumbai_cinema (sno int(4) not null auto_increment,name char(40),area char(15),primary key(sno));
+create table kolkata_cinema (sno int(4) not null auto_increment,name char(40),area char(15),primary key(sno));
+
+insert into user_detail values(1,"Jeevan Pandey","jk1982","123hfg","9485726374");
